@@ -137,13 +137,13 @@ def main():
     global root, f, f_plot, canvs
     root = Tk()
     root.geometry("900x800")
-    root.title("MD-PMAs calculator v.1.0")
+    root.title("WQM-MD calculator v.1.0")
     f = Figure(figsize=(9, 7), dpi=100)
     f_plot = f.add_subplot(111)
     canvs = FigureCanvasTkAgg(f, root)
     canvs.get_tk_widget().grid(row=0, column=0, rowspan=1, columnspan=10, sticky="nesw")
     # label
-    Label(root, text="the nuber of dimensions:").grid(row=4,column=1)
+    Label(root, text="the number of dimensions:").grid(row=4,column=1)
     # combo
     combo = Combobox(root)
     combo['values'] = (4,5,6,7,8,"Text")
